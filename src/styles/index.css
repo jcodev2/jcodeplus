@@ -1,0 +1,151 @@
+/* **************** Fluid Text **************** */
+/* todo: https://utopia.fyi/type/calculator/ */
+:root {
+  /* ? Customize ? */
+  --step--2: clamp(0.74rem, 0.75rem + -0.05vw, 0.7rem);
+  --step--1: clamp(0.89rem, 0.87rem + 0.07vw, 0.94rem);
+  --step-0: clamp(1.06rem, 1.01rem + 0.25vw, 1.25rem);
+  --step-1: clamp(1.28rem, 1.17rem + 0.53vw, 1.67rem);
+  --step-2: clamp(1.53rem, 1.34rem + 0.94vw, 2.22rem);
+  --step-3: clamp(1.84rem, 1.53rem + 1.52vw, 2.96rem);
+  --step-4: clamp(2.2rem, 1.73rem + 2.36vw, 3.95rem);
+  --step-5: clamp(2.64rem, 1.93rem + 3.55vw, 5.26rem);
+}
+
+/* **************** Custom Properties **************** */
+:root {
+  --first-color: #040714;
+  --second-color: #67e0c6;
+  --text-color: #f9f9f9;
+}
+:root {
+  --max-width: 1200px;
+}
+
+/* **************** Reset **************** */
+/* ? Html */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ? Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--first-color);
+}
+
+/* ? Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--titles-color);
+}
+
+/* ? Media */
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ? Lists */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ? Links */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* ? Paragraphs */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* **************** Components **************** */
+/* ? Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+/* **************** Utilities **************** */
+/* ? Center */
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.center-flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ? Fluid */
+.fluid-5 {
+  font-size: var(--step-5);
+}
+.fluid-4 {
+  font-size: var(--step-4);
+}
+.fluid-3 {
+  font-size: var(--step-3);
+}
+.fluid-2 {
+  font-size: var(--step-2);
+}
+.fluid-1 {
+  font-size: var(--step-1);
+}
+.fluid-0 {
+  font-size: var(--step-0);
+}
+.fluid-m1 {
+  font-size: var(--step--1);
+}
+.fluid-m2 {
+  font-size: var(--step--2);
+}
+
+/* ? Font weight */
+.font-w-400 {
+  font-weight: 400;
+}
+.font-w-600 {
+  font-weight: 600;
+}
+.font-w-900 {
+  font-weight: 900;
+}
+
+/* **************** Site Styles **************** */
