@@ -1,6 +1,6 @@
 /* **************** Imports **************** */
 import Header from './components/Header'
-import logo from './logo.svg'
+import Router from './components/Router'
 
 /* **************** Variables **************** */
 
@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <Header />
+      <Router />
     </>
   )
 }
