@@ -1,0 +1,70 @@
+/* ? Home */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background-image: url(/src/assets/img/home-image.jfif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.home-container {
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+  transform: translateY(-50%);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.home-container .home-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-container .home-logo img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+.home-container .home-action {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-action .home-action-button {
+  width: 100%;
+  height: 68px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  font-size: var(--step-2);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+.home-action .home-copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-copyright p {
+  font-size: var(--step-0);
+  font-weight: 400;
+  color: #c1c1c1;
+  text-align: center;
+}

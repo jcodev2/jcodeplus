@@ -1,11 +1,14 @@
 /* ? Header */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   padding: 1rem;
-  background-color: var(--first-color);
+  background-color: var(--first-alpha-color);
   color: var(--text-color);
 }
 
@@ -61,13 +64,32 @@
 
 /* ? Header User */
 .header-user {
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 50%;
-}
-.header-user img {
-  width: 100%;
+  width: 200px;
   height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.header-user span {
+  width: 40%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--step-1);
+  font-weight: 900;
+}
+.header-user button {
+  font-family: var(--font-family);
+  width: 40%;
+  height: 32px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  font-size: var(--step-1);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
 }

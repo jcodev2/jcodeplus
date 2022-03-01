@@ -15,11 +15,14 @@
 /* **************** Custom Properties **************** */
 :root {
   --first-color: #040714;
+  --first-alpha-color: rgba(4, 7, 20, 0.6);
   --second-color: #67e0c6;
   --text-color: #f9f9f9;
+  --button-color: #0063e5;
 }
 :root {
   --max-width: 1200px;
+  --font-family: 'Roboto', sans-serif;
 }
 
 /* **************** Reset **************** */
@@ -149,3 +152,7 @@ p {
 }
 
 /* **************** Site Styles **************** */
+/* ? Scroll Bar */
+::-webkit-scrollbar {
+  width: 0;
+}
